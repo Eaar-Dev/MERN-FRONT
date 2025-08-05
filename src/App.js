@@ -1,9 +1,12 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { WebRouter, AdminRouter } from "./router";
 
 export default function App() {
   return (
-    <div>
-      <h1>Hola mundo desde mi aplicación</h1>
-    </div>
+    <BrowserRouter>
+      <WebRouter />
+      <AdminRouter />
+    </BrowserRouter>
   );
 }
