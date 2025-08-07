@@ -3,7 +3,7 @@ import React from "react";
 export function Home() {
   return (
     <div>
-      <h1>Estamos aquí en la casita del HOME Equis de</h1>
+      <h1>Estamos en el Home component</h1>
     </div>
   );
 }
