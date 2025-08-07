@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { AdminLayout } from "../layouts";
 import { Auth, User, Blog, Cursos, Menu, Newsletter } from "../pages/admin";
 
-const user = { email: "aspire5@outlook.es" }; // Al terminar esto de tiene que volver a poner null
+const user = null; // Al terminar esto de tiene que volver a poner null
 export function AdminRouter() {
   const loadLayout = (Layout, Page) => {
     return (
@@ -21,7 +21,7 @@ export function AdminRouter() {
 
           Caso contrario entrará a admin/blog o admin/users dependiendo de la ruta
         */
-        <Route path="/admin/*" element={loadLayout(AdminLayout, Auth)} />
+        <Route path="/admin/*" element={<Auth />} />
       ) : (
         <>
           {["/admin", "/admin/blog"].map((path) => (
