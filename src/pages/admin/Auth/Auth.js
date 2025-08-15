@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Icon } from "../../../assets";
+import { RegisterForm } from "../../../components/Admin/Auth";
 import { Tabs, Tab, Box, Typography } from "@mui/material";
 import "./auth.scss";
 
@@ -41,6 +42,7 @@ export function Auth() {
         </TabPanel>
         <TabPanel value={value} index={1}>
           Registrar un nuevo usuario.
+          <RegisterForm value={value} />
         </TabPanel>
       </Box>
     </div>
